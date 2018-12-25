@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  /*padding: 0;
+  margin: 0;*/
+  font-family: 'Charm', cursive, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/*выравнивание по середине экрана*/
+.center {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*чтобы не схлопывался родитель*/
+.holder::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.center-field {
+  position: absolute;
+  left: -25px;
+  bottom: 0;
+  top: 25px;
+  right: 0;
+  margin: auto;
+  font-size: 0;
+  width: 450px;
+  height: 450px;
+  border: 2px solid black;
+}
+
+/*доска*/
+.board {
+  width: 404px;
+  height: 404px;
+  font-size: 0;
+  border: black solid 2px;
+}
+
+.black, .white {
+  display: inline-block;
+}
+
+/*квадратики*/
+.white {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.black {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+/*нумерация*/
+.left-panel-top {
+  margin-top: 10px;
+  width: 34px;
+  height: 50px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.left-panel {
+  width: 34px;
+  height: 50px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.bottom-panel-left {
+  display: inline-block;
+  margin-left: 35px;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.bottom-panel {
+  display: inline-block;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  padding: 5px;
+}
